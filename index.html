@@ -14,6 +14,9 @@
     <!-- CSS PLUGIN JS MENU -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
 
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+
     <!-- MI CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -36,6 +39,11 @@
                             <li><a href="http://">Vinos</a></li>
                             <li><a href="http://">Noticias</a></li>
                             <li><a href="http://">Contacto</a></li>
+                            <li class="lang">
+                                <a href="#">ES</a>
+                                <a href="#">EN</a>
+                                <a href="#">PR</a>
+                            </li>
                         </ul>
                     </nav>
             </nav>
@@ -71,13 +79,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12  text-center">
-                    <div class="cepa-vino">
-                        <h2>Lot</h2>
-                        <p>La pasión por expresar el potencial del valle, da origen a la línea LOT, vinos únicos con gran carácter y sentido de identidad.</p>
-                        <a class="leer-mas" href="#">Seguir leyendo</a>
-                        <img class="img-fluid" src="assets/img/vinos.png" />
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cepa-vino">
+                                    <h2>Lot</h2>
+                                    <p>La pasión por expresar el potencial del valle, da origen a la línea LOT, vinos únicos con gran carácter y sentido de identidad.</p>
+                                    <a class="leer-mas" href="#">Seguir leyendo</a>
+                                    <img class="img-fluid" src="assets/img/vinos.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cepa-vino">
+                                    <h2>Lot</h2>
+                                    <p>La pasión por expresar el potencial del valle, da origen a la línea LOT, vinos únicos con gran carácter y sentido de identidad.</p>
+                                    <a class="leer-mas" href="#">Seguir leyendo</a>
+                                    <img class="img-fluid" src="assets/img/vinos.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cepa-vino">
+                                    <h2>Lot</h2>
+                                    <p>La pasión por expresar el potencial del valle, da origen a la línea LOT, vinos únicos con gran carácter y sentido de identidad.</p>
+                                    <a class="leer-mas" href="#">Seguir leyendo</a>
+                                    <img class="img-fluid" src="assets/img/vinos.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                     <!-- VINO LOT -->
+
+                    
                 </div>
             </div>
         </div>
@@ -189,8 +222,21 @@
     <!-- JS DE MENU -->
     <script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
 
+    <!-- JS SWIPER -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
     <!-- MIS FUNCIONES JS -->
     <script src="assets/js/scripts.js"></script>
+
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+          direction: 'horizontal',
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        })
+        </script>
 
 </body>
 </html>

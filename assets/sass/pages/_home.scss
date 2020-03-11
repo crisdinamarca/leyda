@@ -28,6 +28,35 @@ h2{
         }
     }
 }
+.lang,
+.sidr-class-lang,
+#sidr-mobile li.sidr-class-lang {
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: solid 1px #d8d8d8 !important;
+    display: flex;
+}
+#sidr-mobile li.sidr-class-lang a:first-child{
+    padding-left: 30px;
+    font-weight: bold;
+    color: #000;
+}
+#sidr-mobile li.sidr-class-lang a{
+    font-size: 17px;
+    padding: 0px;
+    margin-right: 10px;
+}
+html .swiper-container{
+    padding-bottom: 40px;
+}
+html .swiper-pagination-bullet-active,
+html .swiper-pagination-bullet{
+    background-color: #FFF !important;
+}
+html .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: 0px;
+}
+
 
 /* SECCION */
 .seccion{
