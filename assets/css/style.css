@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* COLORES */
+/* TAMAÑOS TIPOGRAFIA */
+/* TIPOGRAFIAS */
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Libre Baskerville", serif; }
+
+/* FLEXBOX */
+.d-flex {
+  display: flex; }
+
+.justify-content-start {
+  justify-content: flex-start; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.justify-content-between {
+  justify-content: space-between; }
+
+.justify-content-evenly {
+  justify-content: space-evenly; }
+
+.align-items-center {
+  align-items: center; }
+
+.text-center {
+  text-align: center; }
+
+.pl-5 {
+  padding-left: 20%; }
+
+.pr-5 {
+  padding-right: 20%; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* NAVEGACIÓN */
+body {
+  padding-top: 120px; }
+
+h2 {
+  font-size: 30px; }
+
+#nav {
+  background-color: #FFF; }
+  #nav.cambiaPosicion {
+    position: absolute; }
+
+#menu__principal {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  #menu__principal #menu__principal-logo img {
+    width: 130px; }
+  #menu__principal #hamburguer img {
+    width: 50px; }
+
+/* SECCION */
+.seccion {
+  padding: 50px 0px; }
+  .seccion#concepto {
+    background-image: url("../img/bg-concepto.png");
+    background-position: right bottom;
+    background-size: auto 100%;
+    min-height: 600px;
+    padding-top: 0px; }
+  .seccion#premios {
+    background-color: #555; }
+    .seccion#premios h2 {
+      margin-bottom: 15px;
+      color: #FFF;
+      line-height: 1.4em;
+      font-size: 35px; }
+    .seccion#premios p {
+      color: #FFF; }
+  .seccion#vinos {
+    background-color: black; }
+    .seccion#vinos h2 {
+      color: #FFF;
+      font-size: 35px; }
+    .seccion#vinos p {
+      color: #FFF; }
+    .seccion#vinos img {
+      margin-top: 30px; }
+  .seccion#noticias h2 {
+    color: #999; }
+  .seccion#noticias .leer-mas {
+    color: #999; }
+  .seccion#noticias .noticia {
+    text-align: left;
+    color: #999;
+    padding: 40px 0px 20px 0px;
+    position: relative; }
+    .seccion#noticias .noticia.first {
+      padding-top: 0px;
+      margin-top: 30px; }
+      .seccion#noticias .noticia.first:before, .seccion#noticias .noticia.first:after {
+        display: none; }
+    .seccion#noticias .noticia .fecha {
+      font-size: 14px;
+      margin-bottom: 10px;
+      display: block; }
+    .seccion#noticias .noticia a {
+      color: #999;
+      -webkit-transition: all .2s ease-in;
+      transition: all .2s ease-in; }
+      .seccion#noticias .noticia a:hover {
+        text-decoration: none;
+        color: black; }
+    .seccion#noticias .noticia h2 {
+      font-size: 20px;
+      line-height: 1.5em; }
+    .seccion#noticias .noticia:before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      display: block;
+      background-color: #999;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+    .seccion#noticias .noticia:after {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-image: url(../img/ico_shell.svg);
+      display: block;
+      position: absolute;
+      top: -16px;
+      left: 40%;
+      background-color: white;
+      padding: 0px 30px;
+      background-repeat: no-repeat;
+      background-position: center; }
+  .seccion#vinedos {
+    background-image: url(../img/bg-vinedos.jpg);
+    color: #FFF;
+    background-size: auto 100%; }
+  .seccion#newsletter {
+    background-color: #999;
+    color: #FFF; }
+    .seccion#newsletter h2 {
+      font-size: 20px; }
+    .seccion#newsletter form {
+      margin-top: 20px; }
+    .seccion#newsletter input {
+      border-radius: 5px;
+      padding: 10px 20px;
+      width: 100%;
+      box-sizing: border-box;
+      border: none;
+      margin-bottom: 8px; }
+      .seccion#newsletter input:focus {
+        outline: 0; }
+      .seccion#newsletter input[type="submit"] {
+        background-color: black;
+        color: #FFF;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in; }
+        .seccion#newsletter input[type="submit"]:hover {
+          background-color: #333; }
+  .seccion#mapa h2,
+  .seccion#mapa a {
+    color: #999; }
+  .seccion#mapa img {
+    margin: 20px 0px 30px 0px; }
+  .seccion .social {
+    margin-bottom: 40px; }
+    .seccion .social a {
+      color: #999;
+      -webkit-transition: all .2s ease-in;
+      transition: all .2s ease-in; }
+    .seccion .social a:hover {
+      color: black; }
+    .seccion .social i {
+      margin: 0px 9px; }
+  .seccion .leer-mas {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: underline; }
+
+#footer {
+  font-size: 14px; }
+  #footer img {
+    width: 110px;
+    margin-bottom: 20px; }
+
+/* SIDR */
+#sidr-mobile {
+  background-color: #efefef !important;
+  box-shadow: none !important;
+  font-family: "Libre Baskerville", serif; }
+  #sidr-mobile .sidr-inner {
+    padding-top: 40px; }
+  #sidr-mobile ul,
+  #sidr-mobile li {
+    border: none; }
+  #sidr-mobile a {
+    padding: 0px 30px;
+    color: #999;
+    font-size: 20px;
+    box-shadow: none !important;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in; }
+    #sidr-mobile a:hover {
+      color: black; }
+  #sidr-mobile li:hover,
+  #sidr-mobile li:active,
+  #sidr-mobile li.sidr-class-active {
+    line-height: 48px; }
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding-top: 0px; } }
+
+/*# sourceMappingURL=style.css.map */
